@@ -1,0 +1,5 @@
+img{
+    width: 400px; /* You can set the dimensions to whatever you want */
+    height: 450px !important;
+    object-fit: cover;
+}
