@@ -2,6 +2,10 @@
     include("../database/conexao.php");
     $conexao = new Conexao();
     $pdo = $conexao->conectar();
+    $sql = "SELECT nome FROM convidado WHERE confirmado == 'N' ORDER BY nome";
+    $stmt = $pdo->prepare($sql);
+    $stmt->execute();
+    $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -42,18 +46,17 @@
             </div>
             <div class="row">
                 <div class="col-md-10 col-sm-12 col-12">
-                        <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
+                        <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Escreva para pesquisar seu nome">
                         <datalist id="datalistOptions">
-                            <option value="San Francisco">
-                            <option value="New York">
-                            <option value="Seattle">
-                            <option value="Los Angeles">
-                            <option value="Chicago">
+                        <?php 
+                            foreach($rows as $value){    
+                            ?>
+                            <option value="<?= $value['nome']?>">
+                            <? }  ?>
                         </datalist>
                 </div>
                 <div class="col-md-2 col-sm-12 col-12">
-
-                    <button class="btn btn-primary">Confimar Presença</button>
+                    <button onclick="confimar()" id="btnConfirm" disabled class="btn btn-primary">Confimar Presença</button>
                 </div>
             </div>
         </div>
@@ -106,5 +109,11 @@
         </footer>
     <script type="text/javascript" src="../dist/js/jquery.js"></script>
     <script type="text/javascript" src="../dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript">
+        var btn = document.getElementById("btnConfirm"); 
+        function confirmar(){
+
+        }
+    </script>
 </body>
 </html>

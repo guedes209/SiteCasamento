@@ -2,7 +2,7 @@
     include("../database/conexao.php");
     $conexao = new Conexao();
     $pdo = $conexao->conectar();
-    $sql = "SELECT presenteNome, FORMAT(valor, 2,'de_DE') as valor, link, caminhoimg, comprado FROM presente ORDER BY presenteNome";
+    $sql = "SELECT presenteID, presenteNome, FORMAT(valor, 2,'de_DE') as valor, link, caminhoimg, comprado FROM presente ORDER BY presenteNome";
     $stmt = $pdo->prepare($sql);
     $stmt->execute();
     $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -46,8 +46,11 @@
                 <div class="row">
                 <?php
                     foreach($rows as $value){
+                        $enable = $value['comprado'] == 'S' ? 'disabled' : '';
+                        $cor = $value['comprado'] == 'S' ? 'btn-secondary' : 'btn-success';
+                        $texto = $value['comprado'] == 'S' ? 'Comprado' : 'Comprar';
                         ?>
-                        <li class="list-group-item col-lg-4 col-md-6 col-sm-12 col-12">
+                        <li id="<?= $value['presenteID']?>" class="list-group-item col-lg-4 col-md-6 col-sm-12 col-12">
                             <img src=<?= $value['caminhoimg']?> class="img-thumbnail">
                             <div class="h5" style="margin-top:5px;">
                                 <?= $value['presenteNome'] ?>
@@ -55,8 +58,8 @@
                             <div class="d-flex justify-content-between align-items-center">
                                 <span class="float-left">Valor: R$<?= $value['valor'] ?></span>
                                 <a onclick="window.open('<?= $value['link']?>');" target="_self">
-                                    <button class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
-                                        Comprar
+                                    <button <?= $enable ?> onclick="atribuir(<?= $value['presenteID']?>)" class="btn <?= $cor ?>" data-toggle="modal" data-target="#exampleModal">
+                                    <?= $texto ?>
                                     </button>
                                 </a>
                             </div>
@@ -66,27 +69,30 @@
             </ul>
         </div>
     </div> 
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-        <div class="modal-content">
-        <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Obrigado por nos comprar um presente!!</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-            </button>
-        </div>
-        <div class="modal-body">
-            Para nosso controle e que não haja nenhum tipo de mal-entendido, peçamos que confirme a compra do Presente
-            por gentileza. Caso ainda não decidiu o que nos dar, só clicar em fechar e continuar procurando. Estamos
-            super ansiosos!!!
-        </div>
-        <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-            <button type="button" class="btn btn-primary">Confirmar</button>
-        </div>
-        </div>
-    </div>
-    </div> 
+    <form id="confirmPresente" action="./confirmarCompra.php" method="POST">
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Obrigado por nos comprar um presente!!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    <input type="hidden" id="presenteID" name="presente" value=""></input>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    Para nosso controle e que não haja nenhum tipo de mal-entendido, peçamos que confirme a compra do Presente
+                    por gentileza. Caso ainda não decidiu o que nos dar, só clicar em fechar e continuar procurando. Estamos
+                    super ansiosos!!!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    <input type="submit" value="Confirmar" class="btn btn-primary"></input>
+                </div>
+                </div>
+            </div>
+        </div> 
+    </form>
     <footer class="text-center text-white" style="background-color: #f1f1f1; ">
         <!-- Grid container -->
         <div class="container pt-4">
@@ -135,5 +141,10 @@
         </footer>
     <script type="text/javascript" src="../dist/js/jquery.js"></script>
     <script type="text/javascript" src="../dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function atribuir(id){
+            document.getElementById("presenteID").value = id;
+        }
+    </script>
 </body>
 </html>
