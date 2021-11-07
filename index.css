@@ -40,3 +40,6 @@
     clear:both; 
     display:flex; 
 }
+body{
+    background-color: white;
+}

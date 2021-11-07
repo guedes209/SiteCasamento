@@ -37,12 +37,12 @@
             </div>
         </nav>
     </div>
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <!-- <img class="img-fluid col-6 pd-0" src="./images/bruno.jpg"/>
             <img class="img-fluid col-6 pd-0" src="./images/marcella.jpg"/> -->
         </div> 
-        <h2 class="text-center">Quanto tempo para o grande dia</h2>
+        <h2 class="text-center">Contagem regressiva para o grande dia</h2>
         <div class="d-flex justify-content-center">
             <div id="countdown_dashboard">
             <div class="dashp">
@@ -63,6 +63,17 @@
             </div>
             </div>
         </div> 
+        <div class="text-center font-italic">
+            <h2 class="text-center">Local e horário da festa</h2>
+            <div class="font-italic" style="font-size=26px;">
+                <h3>Nossa grande comemoração será feita no dia 22 de Janeiro de 2022 as 16:00 horas em ponto!!</h3>
+            </div>
+        </div>
+        <div class="d-flex justify-content-center">
+            <div class="embed-responsive embed-responsive-21by9" style="width:80%!important;">
+                <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3715.734789067706!2d-42.675849485199976!3d-21.360953789907946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa2d72c8b606515%3A0x56f60a48f5e2408d!2sManto%20Verde!5e0!3m2!1spt-BR!2sbr!4v1636253648476!5m2!1spt-BR!2sbr" style="height: 80%!important;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
     </div>
     <footer class="text-center text-white" style="background-color: #f1f1f1;">
         <!-- Grid container -->
