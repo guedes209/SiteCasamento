@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Lista de Presente</title>
 </head>
-<body>
+<body style="background-color:#ffe5ed;">
     <div>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <a class="navbar-brand" href="../index.php">B&M</a>
@@ -50,7 +50,7 @@
                         $cor = $value['comprado'] == 'S' ? 'btn-secondary' : 'btn-success';
                         $texto = $value['comprado'] == 'S' ? 'Comprado' : 'Comprar';
                         ?>
-                        <li id="<?= $value['presenteID']?>" class="list-group-item col-lg-4 col-md-6 col-sm-12 col-12">
+                        <li id="<?= $value['presenteID']?>" class="list-group-item col-lg-4 col-md-6 col-sm-12 col-12" style="border: 7px #ffe5ed solid">
                             <img src=<?= $value['caminhoimg']?> class="img-thumbnail">
                             <div class="h5" style="margin-top:5px;">
                                 <?= $value['presenteNome'] ?>
