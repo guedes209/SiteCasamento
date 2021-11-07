@@ -2,7 +2,7 @@
     include("../database/conexao.php");
     $conexao = new Conexao();
     $pdo = $conexao->conectar();
-    $sql = "SELECT nome FROM convidado WHERE confirmado == 'N' ORDER BY nome";
+    $sql = "SELECT nome FROM convidado WHERE confirmado = 'N' ORDER BY nome";
     $stmt = $pdo->prepare($sql);
     $stmt->execute();
     $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -112,7 +112,7 @@
     <script type="text/javascript">
         var btn = document.getElementById("btnConfirm"); 
         function confirmar(){
-
+            console.log("dsad");
         }
     </script>
 </body>
