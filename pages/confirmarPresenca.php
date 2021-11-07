@@ -1,12 +1,3 @@
-<?php
-    include("../database/conexao.php");
-    $conexao = new Conexao();
-    $pdo = $conexao->conectar();
-    $sql = "SELECT nome FROM convidado WHERE confirmado = 'N' ORDER BY nome";
-    $stmt = $pdo->prepare($sql);
-    $stmt->execute();
-    $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../dist/css/bootstrap.min.css"></link>    
+    <link rel="stylesheet" href="css/confirmarpresenca.css"></link>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Lista de Presença</title>
 </head>
@@ -44,21 +36,16 @@
             <div class="col-12">    
                 <label for="exampleDataList" class="form-label h2">Nome</label>
             </div>
-            <div class="row">
-                <div class="col-md-10 col-sm-12 col-12">
-                        <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Escreva para pesquisar seu nome">
-                        <datalist id="datalistOptions">
-                        <?php 
-                            foreach($rows as $value){    
-                            ?>
-                            <option value="<?= $value['nome']?>">
-                            <? }  ?>
-                        </datalist>
+            <form action="./confirmaPrese.php" method="POST">
+                <div class="row">
+                    <div class="col-md-10 col-sm-12 col-12">
+                            <input id="convidadeNome" class="form-control" name="convidado" list="datalistOptions" id="exampleDataList" placeholder="Escreva para pesquisar seu nome">
+                    </div>
+                    <div class="col-md-2 col-sm-12 col-12">
+                        <input onclick="buscar()" id="btnConfirm" type="submit" value="Confirmar Presença" class="btn btn-primary"></input>
+                    </div>
                 </div>
-                <div class="col-md-2 col-sm-12 col-12">
-                    <button onclick="confimar()" id="btnConfirm" disabled class="btn btn-primary">Confimar Presença</button>
-                </div>
-            </div>
+            </form>
         </div>
     </div>
     <footer class="text-center text-white" style="background-color: #f1f1f1; position: absolute; bottom: 0; width: 100%;">
@@ -109,11 +96,5 @@
         </footer>
     <script type="text/javascript" src="../dist/js/jquery.js"></script>
     <script type="text/javascript" src="../dist/js/bootstrap.bundle.min.js"></script>
-    <script type="text/javascript">
-        var btn = document.getElementById("btnConfirm"); 
-        function confirmar(){
-            console.log("dsad");
-        }
-    </script>
 </body>
 </html>

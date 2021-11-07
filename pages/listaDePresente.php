@@ -50,8 +50,8 @@
                         $cor = $value['comprado'] == 'S' ? 'btn-secondary' : 'btn-success';
                         $texto = $value['comprado'] == 'S' ? 'Comprado' : 'Comprar';
                         ?>
-                        <li id="<?= $value['presenteID']?>" class="list-group-item col-lg-4 col-md-6 col-sm-12 col-12" style="border: 7px #ffe5ed solid">
-                            <img src=<?= $value['caminhoimg']?> class="img-thumbnail">
+                        <li id="<?= $value['presenteID']?>" class="list-group-item col-lg-4 col-md-6 col-sm-12 col-12" style="border: 7px #ffe5ed solid;">
+                            <img src=<?= $value['caminhoimg']?> class="img-fluid">
                             <div class="h5" style="margin-top:5px;">
                                 <?= $value['presenteNome'] ?>
                             </div>
