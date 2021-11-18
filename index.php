@@ -28,7 +28,15 @@
                     <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="pages/listaDePresente.php">Lista de Presente</a>
+                    <div class="dropdown">
+                        <a class="btn btn-dark dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Presentes
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="./pages/listaDePresente.php">Lista de Presente</a>
+                            <a class="dropdown-item" href="https://nubank.com.br/pagar/9hsaw/o4RbGfY3d0">Enviar Dinheiro (Pix)</a>
+                        </div>
+                    </div>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="pages/confirmarPresenca.php">Confirmar Presença</a>
@@ -42,35 +50,40 @@
             <!-- <img class="img-fluid col-6 pd-0" src="./images/bruno.jpg"/>
             <img class="img-fluid col-6 pd-0" src="./images/marcella.jpg"/> -->
         </div> 
-        <h2 class="text-center">Contagem regressiva para o grande dia</h2>
-        <div class="d-flex justify-content-center">
-            <div id="countdown_dashboard">
-            <div class="dashp">
-                <span class="dashtitle">Dias</span>
-                <p id="days"></p>
-            </div>
-            <div class="dashp">
-                <span class="dashtitle">Horas</span>
-                <p id="hours"></p>
-            </div>
-            <div class="dashp">
-                <span class="dashtitle">Minutos</span>
-                <p id="minutes"></p>
-            </div>
-            <div class="dashp">
-                <span class="dashtitle">Segundos</span>
-                <p id="seconds"></p>
-            </div>
-            </div>
-        </div> 
-        <div class="text-center font-italic">
+        <div class="paisagem pt-5">
+            <h1 class="text-center text-dark font-weight-bold" style="font-size: 70px;">Marcella e Bruno</h1>
+            <h1 class="text-center text-dark font-weight-bold">Bem-Vindos ao nosso site</h1>
+            <h3 class="mt-4 text-center text-dark font-weight-bold">Contagem regressiva</h3>
+            <div class="d-flex justify-content-center">
+                <div id="countdown_dashboard">
+                <div class="dashp">
+                    <span class="dashtitle text-dark">Dias</span>
+                    <p id="days"></p>
+                </div>
+                <div class="dashp">
+                    <span class="dashtitle text-dark">Horas</span>
+                    <p id="hours"></p>
+                </div>
+                <div class="dashp">
+                    <span class="dashtitle text-dark">Minutos</span>
+                    <p id="minutes"></p>
+                </div>
+                <div class="dashp">
+                    <span class="dashtitle text-dark">Segundos</span>
+                    <p id="seconds"></p>
+                </div>
+                </div>
+            </div> 
+            <h3 class="mb-4 py-4 text-center text-dark font-weight-bold">- 22/01/2022 -</h3>
+        </div>
+        <div class="text-center font-italic my-4">
             <h2 class="text-center">Local e horário da festa</h2>
             <div class="font-italic" style="font-size=26px;">
                 <h3>Nossa grande comemoração será feita no dia 22 de Janeiro de 2022 as 16:00 horas em ponto!!</h3>
             </div>
         </div>
         <div class="d-flex justify-content-center">
-            <div class="embed-responsive embed-responsive-21by9" style="width:80%!important;">
+            <div class="embed-responsive embed-responsive-21by9" style="width:100%!important;">
                 <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3715.734789067706!2d-42.675849485199976!3d-21.360953789907946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa2d72c8b606515%3A0x56f60a48f5e2408d!2sManto%20Verde!5e0!3m2!1spt-BR!2sbr!4v1636253648476!5m2!1spt-BR!2sbr" style="height: 80%!important;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>

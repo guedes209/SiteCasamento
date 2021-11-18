@@ -14,7 +14,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../dist/css/bootstrap.min.css"></link>
-    <link rel="stylesheet" href="css/listaDePresente.css"></link>
+    <link rel="stylesheet" href="./css/listaDePresente.css"></link>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Lista de Presente</title>
 </head>
@@ -40,7 +40,58 @@
             </div>
         </nav>
     </div>
-    <div class="container" style="margin-top: 70px">
+    <div class="container" style="margin-top: 70px;">
+        <h1 class="text-center">Pix</h1>
+        <div class="display-flex list-group-horizontal">
+            <ul class="list-group list-group-horizontal">
+                <div class="row">
+                    <li class="list-group-item col-lg-4 col-md-6 col-sm-12 col-12 list-group-item" style="border: 7px #ffe5ed solid;">
+                        <div>
+                            <h1 class="text-center">Pagar no Pix</h1>
+                            <img style="max-height: 270px; max-width:270px" src="../images/pix.png" class="rounded mx-auto d-block">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="float-left">Valor: R$100</span>
+                                <a target="_self">
+                                    <button onclick="" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
+                                    Enviar
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item col-lg-4 col-md-6 col-sm-12 col-12 list-group-item" style="border: 7px #ffe5ed solid;">
+                        <div>
+                            <h1 class="text-center">Pagar no Pix</h1>
+                            <img style="max-height: 270px; max-width:270px" src="../images/pix.png" class="rounded mx-auto d-block">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="float-left">Valor: R$150</span>
+                                <a target="_self">
+                                    <button onclick="" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
+                                    Enviar
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="list-group-item col-lg-4 col-md-6 col-sm-12 col-12 list-group-item" style="border: 7px #ffe5ed solid;">
+                        <div>
+                            <h1 class="text-center">Pagar no Pix</h1>
+                            <img style="max-height: 270px; max-width:270px" src="../images/pix.png" class="rounded mx-auto d-block">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="float-left">Valor: R$200</span>
+                                <a target="_self">
+                                    <button onclick="" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
+                                    Enviar
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                </div>
+            </ul>
+        </div>
+        <hr>
+        <h1 class="text-center">Presentes</h1>
         <div class="display-flex">
             <ul class="list-group list-group-horizontal">	
                 <div class="row">
@@ -50,8 +101,8 @@
                         $cor = $value['comprado'] == 'S' ? 'btn-secondary' : 'btn-success';
                         $texto = $value['comprado'] == 'S' ? 'Comprado' : 'Comprar';
                         ?>
-                        <li id="<?= $value['presenteID']?>" class="list-group-item col-lg-4 col-md-6 col-sm-12 col-12" style="border: 7px #ffe5ed solid;">
-                            <img src=<?= $value['caminhoimg']?> class="img-fluid">
+                        <li id="<?= $value['presenteID']?>" class="list-group-item col-lg-4 col-md-6 col-sm-12 col-12" style="border: #ffe5ed solid; border-width: 5px 10px 5px 10px;">
+                            <img src=<?= $value['caminhoimg']?> class="rounded mx-auto d-block" style="max-height: 270px; max-width:270px">
                             <div class="h5" style="margin-top:5px;">
                                 <?= $value['presenteNome'] ?>
                             </div>
@@ -64,7 +115,7 @@
                                 </a>
                             </div>
                         </li>
-                    <?}?>
+                    <?php } ?>
                 </div>
             </ul>
         </div>
