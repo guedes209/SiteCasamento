@@ -46,7 +46,7 @@
             <h1 class="text-center text-dark font-weight-bold" style="font-size: 70px;">Marcella e Bruno</h1>
             <h1 class="text-center text-dark font-weight-bold">Bem-Vindos ao nosso site</h1>
             <!-- <h3 class="mt-4 text-center text-dark font-weight-bold">Contagem regressiva</h3> -->
-            <div class="mt-4 pt-4 d-flex justify-content-center">
+            <div class="mt-4 pt-2 d-flex justify-content-center">
                 <div id="countdown_dashboard">
                 <div class="dashp">
                     <span class="dashtitle text-dark">Dias</span>
