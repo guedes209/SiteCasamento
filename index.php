@@ -25,21 +25,13 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <div class="dropdown">
-                        <a class="btn btn-dark dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Presentes
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                            <a class="dropdown-item" href="./pages/listaDePresente.php">Lista de Presente</a>
-                            <a class="dropdown-item" href="https://nubank.com.br/pagar/9hsaw/o4RbGfY3d0">Enviar Dinheiro (Pix)</a>
-                        </div>
-                    </div>
+                    <a class="nav-link" href="./pages/listaDePresente.php">Lista de Presente</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="pages/confirmarPresenca.php">Confirmar Presença</a>
+                    <a class="nav-link" href="#">Confirmar Presença</a>
                 </li>
                 </ul>
             </div>
@@ -53,8 +45,8 @@
         <div class="paisagem pt-5">
             <h1 class="text-center text-dark font-weight-bold" style="font-size: 70px;">Marcella e Bruno</h1>
             <h1 class="text-center text-dark font-weight-bold">Bem-Vindos ao nosso site</h1>
-            <h3 class="mt-4 text-center text-dark font-weight-bold">Contagem regressiva</h3>
-            <div class="d-flex justify-content-center">
+            <!-- <h3 class="mt-4 text-center text-dark font-weight-bold">Contagem regressiva</h3> -->
+            <div class="mt-4 pt-4 d-flex justify-content-center">
                 <div id="countdown_dashboard">
                 <div class="dashp">
                     <span class="dashtitle text-dark">Dias</span>

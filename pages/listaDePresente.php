@@ -34,7 +34,7 @@
                     <a class="nav-link" href="listaDePresente.php">Lista de Presente</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="confirmarPresenca.php">Confirmar Presença</a>
+                    <a class="nav-link" href="#">Confirmar Presença</a>
                 </li>
                 </ul>
             </div>
@@ -51,11 +51,14 @@
                             <img style="max-height: 270px; max-width:270px" src="../images/pix.png" class="rounded mx-auto d-block">
                             <div class="d-flex justify-content-between align-items-center">
                                 <span class="float-left">Valor: R$100</span>
-                                <a target="_self">
-                                    <button onclick="" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
-                                    Enviar
+                                <div class="dropdown">
+                                    <button class="btn btn-success dropdown-toggle" id="dropdownMenuButton1" data-toggle="dropdown" type="button" aria-expanded="false">Enviar
                                     </button>
-                                </a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <a class="dropdown-item" onclick="window.open('https://nubank.com.br/pagar/9hsaw/o4RbGfY3d0');">Bruno</a>
+                                        <a class="dropdown-item" onclick="window.open('https://nubank.com.br/pagar/9hsaw/o4RbGfY3d0');">Marcella</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </li>
@@ -65,11 +68,14 @@
                             <img style="max-height: 270px; max-width:270px" src="../images/pix.png" class="rounded mx-auto d-block">
                             <div class="d-flex justify-content-between align-items-center">
                                 <span class="float-left">Valor: R$150</span>
-                                <a target="_self">
-                                    <button onclick="" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
-                                    Enviar
+                                <div class="dropdown">
+                                    <button class="btn btn-success dropdown-toggle" id="dropdownMenuButton1" data-toggle="dropdown" type="button" aria-expanded="false">Enviar
                                     </button>
-                                </a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <a class="dropdown-item" onclick="window.open('https://nubank.com.br/pagar/9hsaw/o4RbGfY3d0');">Bruno</a>
+                                        <a class="dropdown-item" onclick="window.open('https://nubank.com.br/pagar/9hsaw/o4RbGfY3d0');">Marcella</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </li>
@@ -79,11 +85,14 @@
                             <img style="max-height: 270px; max-width:270px" src="../images/pix.png" class="rounded mx-auto d-block">
                             <div class="d-flex justify-content-between align-items-center">
                                 <span class="float-left">Valor: R$200</span>
-                                <a target="_self">
-                                    <button onclick="" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
-                                    Enviar
+                                <div class="dropdown">
+                                    <button class="btn btn-success dropdown-toggle" id="dropdownMenuButton1" data-toggle="dropdown" type="button" aria-expanded="false">Enviar
                                     </button>
-                                </a>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <a class="dropdown-item" onclick="window.open('https://nubank.com.br/pagar/9hsaw/o4RbGfY3d0');">Bruno</a>
+                                        <a class="dropdown-item" onclick="window.open('https://nubank.com.br/pagar/9hsaw/o4RbGfY3d0');">Marcella</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </li>
