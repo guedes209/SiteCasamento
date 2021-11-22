@@ -13,28 +13,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../dist/css/bootstrap.min.css"></link>
+    <link rel="stylesheet" href="../dist/css/bootstrap.css"></link>
     <link rel="stylesheet" href="./css/listaDePresente.css"></link>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Lista de Presente</title>
 </head>
-<body style="background-color:#ffe5ed;">
+<body style="background-color:white; font-family: fangsong">
     <div>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-            <a class="navbar-brand" href="../index.php">B&M</a>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top p-3">
+            <a class="navbar-brand" href="../index.php">M&B</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="../index.php">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="../index.php">Início <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Confirmar Presença</a>
                 </li>
                 <li class="nav-item active">
                     <a class="nav-link" href="listaDePresente.php">Lista de Presente</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Confirmar Presença</a>
+                    <a class="nav-link" href="mensagem.php">Mensagem</a>
                 </li>
                 </ul>
             </div>
@@ -45,52 +48,49 @@
         <div class="display-flex list-group-horizontal">
             <ul class="list-group list-group-horizontal">
                 <div class="row">
-                    <li class="list-group-item col-lg-4 col-md-6 col-sm-12 col-12 list-group-item" style="border: 7px #ffe5ed solid;">
+                    <li class="bg-light list-group-item col-lg-4 col-md-6 col-sm-12 col-12 list-group-item" style="border: 7px white solid;">
                         <div>
-                            <h1 class="text-center">Pagar no Pix</h1>
                             <img style="max-height: 270px; max-width:270px" src="../images/pix.png" class="rounded mx-auto d-block">
                             <div class="d-flex justify-content-between align-items-center">
                                 <span class="float-left">Valor: R$100</span>
                                 <div class="dropdown">
-                                    <button class="btn btn-success dropdown-toggle" id="dropdownMenuButton1" data-toggle="dropdown" type="button" aria-expanded="false">Enviar
+                                    <button class="btn btn-primary dropdown-toggle" id="dropdownMenuButton1" data-toggle="dropdown" type="button" aria-expanded="false">Enviar
                                     </button>
                                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                                         <a class="dropdown-item" onclick="window.open('https://nubank.com.br/pagar/9hsaw/o4RbGfY3d0');">Bruno</a>
-                                        <a class="dropdown-item" onclick="window.open('https://nubank.com.br/pagar/9hsaw/o4RbGfY3d0');">Marcella</a>
+                                        <a class="dropdown-item" onclick="window.open('https://nubank.com.br/pagar/1kzh07/u6mXlFN0up');">Marcella</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </li>
-                    <li class="list-group-item col-lg-4 col-md-6 col-sm-12 col-12 list-group-item" style="border: 7px #ffe5ed solid;">
+                    <li class=" bg-light list-group-item col-lg-4 col-md-6 col-sm-12 col-12 list-group-item" style="border: 7px white solid;">
                         <div>
-                            <h1 class="text-center">Pagar no Pix</h1>
                             <img style="max-height: 270px; max-width:270px" src="../images/pix.png" class="rounded mx-auto d-block">
                             <div class="d-flex justify-content-between align-items-center">
                                 <span class="float-left">Valor: R$150</span>
                                 <div class="dropdown">
-                                    <button class="btn btn-success dropdown-toggle" id="dropdownMenuButton1" data-toggle="dropdown" type="button" aria-expanded="false">Enviar
+                                    <button class="btn btn-primary dropdown-toggle" id="dropdownMenuButton1" data-toggle="dropdown" type="button" aria-expanded="false">Enviar
                                     </button>
                                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                                         <a class="dropdown-item" onclick="window.open('https://nubank.com.br/pagar/9hsaw/o4RbGfY3d0');">Bruno</a>
-                                        <a class="dropdown-item" onclick="window.open('https://nubank.com.br/pagar/9hsaw/o4RbGfY3d0');">Marcella</a>
+                                        <a class="dropdown-item" onclick="window.open('https://nubank.com.br/pagar/1kzh07/u6mXlFN0up');">Marcella</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </li>
-                    <li class="list-group-item col-lg-4 col-md-6 col-sm-12 col-12 list-group-item" style="border: 7px #ffe5ed solid;">
+                    <li class="bg-light list-group-item col-lg-4 col-md-6 col-sm-12 col-12 list-group-item" style="border: 7px white solid;">
                         <div>
-                            <h1 class="text-center">Pagar no Pix</h1>
                             <img style="max-height: 270px; max-width:270px" src="../images/pix.png" class="rounded mx-auto d-block">
                             <div class="d-flex justify-content-between align-items-center">
                                 <span class="float-left">Valor: R$200</span>
                                 <div class="dropdown">
-                                    <button class="btn btn-success dropdown-toggle" id="dropdownMenuButton1" data-toggle="dropdown" type="button" aria-expanded="false">Enviar
+                                    <button class="btn btn-primary dropdown-toggle" id="dropdownMenuButton1" data-toggle="dropdown" type="button" aria-expanded="false">Enviar
                                     </button>
                                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
                                         <a class="dropdown-item" onclick="window.open('https://nubank.com.br/pagar/9hsaw/o4RbGfY3d0');">Bruno</a>
-                                        <a class="dropdown-item" onclick="window.open('https://nubank.com.br/pagar/9hsaw/o4RbGfY3d0');">Marcella</a>
+                                        <a class="dropdown-item" onclick="window.open('https://nubank.com.br/pagar/1kzh07/u6mXlFN0up');">Marcella</a>
                                     </div>
                                 </div>
                             </div>
@@ -100,17 +100,24 @@
             </ul>
         </div>
         <hr>
-        <h1 class="text-center">Presentes</h1>
+        <h1 class="text-center mb-3">Presentes</h1>
+        <div class="bg-light pt-2 mb-5">
+            <h5 class="text-center">Informações importantes</h5>
+            <div class="row">
+                <p class="ml-5 col-7" style="font-bold: none;">Endereço: Avenida Aladia de Abreu. <br>Bairro: Marote/ Número: 330/ CEP: 36774-666</p><br>
+                <p class="ml-4 col-4">Caso escolha geladeira, fogão ou cama, <br>entrar em contato com os noivos.</p>
+            </div>
+        </div>
         <div class="display-flex">
             <ul class="list-group list-group-horizontal">	
                 <div class="row">
                 <?php
                     foreach($rows as $value){
                         $enable = $value['comprado'] == 'S' ? 'disabled' : '';
-                        $cor = $value['comprado'] == 'S' ? 'btn-secondary' : 'btn-success';
+                        $cor = $value['comprado'] == 'S' ? 'btn-secondary' : 'btn-primary';
                         $texto = $value['comprado'] == 'S' ? 'Comprado' : 'Comprar';
                         ?>
-                        <li id="<?= $value['presenteID']?>" class="list-group-item col-lg-4 col-md-6 col-sm-12 col-12" style="border: #ffe5ed solid; border-width: 5px 10px 5px 10px;">
+                        <li id="<?= $value['presenteID']?>" class="bg-light list-group-item col-lg-4 col-md-6 col-sm-12 col-12" style="border: white solid; border-width:10px;">
                             <img src=<?= $value['caminhoimg']?> class="rounded mx-auto d-block" style="max-height: 270px; max-width:270px">
                             <div class="h5" style="margin-top:5px;">
                                 <?= $value['presenteNome'] ?>

@@ -15,39 +15,40 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Casamento Bruno e Marcella</title>
 </head>
-<body>
+<body style="font-family: fangsong">
     <div>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="index.php">B&M</a>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-3">
+            <a class="navbar-brand" href="index.php">M&B</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#">Início <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Confirmar Presença</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="./pages/listaDePresente.php">Lista de Presente</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Confirmar Presença</a>
+                    <a class="nav-link" href="./pages/mensagem.php">Mensagem</a>
                 </li>
                 </ul>
             </div>
         </nav>
     </div>
-    <div class="container-fluid">
-        <div class="row">
-            <!-- <img class="img-fluid col-6 pd-0" src="./images/bruno.jpg"/>
-            <img class="img-fluid col-6 pd-0" src="./images/marcella.jpg"/> -->
-        </div> 
+    <div class="container-fluid bg-light"> 
         <div class="paisagem pt-5">
-            <h1 class="text-center text-dark font-weight-bold" style="font-size: 70px;">Marcella e Bruno</h1>
-            <h1 class="text-center text-dark font-weight-bold">Bem-Vindos ao nosso site</h1>
-            <!-- <h3 class="mt-4 text-center text-dark font-weight-bold">Contagem regressiva</h3> -->
-            <div class="mt-4 pt-2 d-flex justify-content-center">
-                <div id="countdown_dashboard">
+            <h1 class="mt-5 pt-5 text-center text-dark font-weight-bold" style="font-size: 70px">Marcella e Bruno</h1>
+            <h3 class="mb-4 py-4 text-center text-dark font-weight-bold"> 22/01/2022 </h3>
+        </div>
+        <h1 class="mt-5 pt-5 text-center text-dark font-weight-bold">Bem-Vindos ao Nosso Site!</h1>
+        <h3 class="mt-5 pt-5 text-center text-dark font-weight-bold">Contagem regressiva</h3>
+        <div class="d-flex justify-content-center">
+            <div id="countdown_dashboard">
                 <div class="dashp">
                     <span class="dashtitle text-dark">Dias</span>
                     <p id="days"></p>
@@ -58,25 +59,33 @@
                 </div>
                 <div class="dashp">
                     <span class="dashtitle text-dark">Minutos</span>
-                    <p id="minutes"></p>
-                </div>
-                <div class="dashp">
-                    <span class="dashtitle text-dark">Segundos</span>
-                    <p id="seconds"></p>
-                </div>
-                </div>
-            </div> 
-            <h3 class="mb-4 py-4 text-center text-dark font-weight-bold">- 22/01/2022 -</h3>
-        </div>
-        <div class="text-center font-italic my-4">
-            <h2 class="text-center">Local e horário da festa</h2>
-            <div class="font-italic" style="font-size=26px;">
-                <h3>Nossa grande comemoração será feita no dia 22 de Janeiro de 2022 as 16:00 horas em ponto!!</h3>
+                <p id="minutes"></p>
             </div>
+            <div class="dashp">
+                <span class="dashtitle text-dark">Segundos</span>
+                <p id="seconds"></p>
+            </div>
+            </div>
+        </div> 
+        <div style="min-height: 100px"></div>
+        <div class="ml-5 mr-5 mt-5 p-5">
+            <h2 class="text-center">Um pouco sobre nós</h2>
+            <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ante sapien, tincidunt id pretium a, aliquam sit amet ante. Quisque vitae neque sapien. Duis dignissim placerat dolor nec porta. Quisque elementum consequat augue, sit amet tincidunt ligula vulputate sit amet. Fusce porta nisi diam, vitae pretium nibh volutpat quis. Nam sodales ex quis euismod dignissim. Donec porta eget lacus sit amet consectetur. Nullam vel leo egestas, volutpat neque ac, facilisis tellus. Aliquam dapibus sem condimentum vehicula eleifend.</p>    
         </div>
-        <div class="d-flex justify-content-center">
-            <div class="embed-responsive embed-responsive-21by9" style="width:100%!important;">
-                <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3715.734789067706!2d-42.675849485199976!3d-21.360953789907946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa2d72c8b606515%3A0x56f60a48f5e2408d!2sManto%20Verde!5e0!3m2!1spt-BR!2sbr!4v1636253648476!5m2!1spt-BR!2sbr" style="height: 80%!important;" allowfullscreen="" loading="lazy"></iframe>
+        <div class="row d-flex justify-content-center">
+            <img class="rounded col-4 pd-0" style="max-height: 270px; max-width:240px" src="./images/bruno.jpg"/>
+            <img class="rounded col-4 pd-0" style="max-height: 270px; max-width:240px" src="./images/marcella2.jpg"/>
+            <img class="rounded col-4 pd-0" style="max-height: 270px; max-width:240px" src="./images/marcella2.jpg"/>
+        </div>
+        <div style="min-height: 100px"></div>
+        <h3 class="text-center">Em breve fotos do casal.</h3>
+        <div style="min-height: 100px"></div>
+        <div class="text-center font-italic mt-5 pt-5">
+            <h4 class="text-center">Local da cerimônia e recepção</h4>
+        </div>
+        <div class="d-flex justify-content-center mt-3 pt-3">
+            <div class="embed-responsive embed-responsive-21by9" style="width:60%!important;">
+                <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3715.734789067706!2d-42.675849485199976!3d-21.360953789907946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa2d72c8b606515%3A0x56f60a48f5e2408d!2sManto%20Verde!5e0!3m2!1spt-BR!2sbr!4v1636253648476!5m2!1spt-BR!2sbr" style="height: 95%!important;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
     </div>

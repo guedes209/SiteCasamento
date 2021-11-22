@@ -3,3 +3,7 @@ img{
     height: 450px !important;
     object-fit: cover;
 }
+nav{
+    font-size:1.2em;
+    font-style: normal!important;
+}
