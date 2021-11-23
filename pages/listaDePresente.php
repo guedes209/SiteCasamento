@@ -31,7 +31,7 @@
                     <a class="nav-link" href="../index.php">Início <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Confirmar Presença</a>
+                    <a class="nav-link" href="https://wa.me/553299874948" target="_blank">Confirmar Presença</a>
                 </li>
                 <li class="nav-item active">
                     <a class="nav-link" href="listaDePresente.php">Lista de Presente</a>

@@ -31,7 +31,7 @@
                     <a class="nav-link" href="../index.php">Início <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Confirmar Presença</a>
+                    <a class="nav-link" href="https://wa.me/553299874948" target="_blank">Confirmar Presença</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="listaDePresente.php">Lista de Presente</a>
@@ -63,11 +63,10 @@
                     <label for="exampleFormControlTextarea1">Mensagem</label>
                     <textarea name="mensagem" class="form-control" id="exampleFormControlTextarea1" style="resize:none;" rows="3"></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary">Enviar</button>
+                <button type="submit" id="enviar" class="btn btn-primary">Enviar</button>
             </form>
         </div>
     </div>
-    
     <div style="min-height: 98px"></div>
     <footer class="text-center text-white mt-5" style="background-color: #f1f1f1;">
         <!-- Grid container -->
@@ -117,10 +116,10 @@
         </footer>
     <script type="text/javascript" src="../dist/js/jquery.js"></script>
     <script type="text/javascript" src="../dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        function atribuir(id){
-            document.getElementById("presenteID").value = id;
-        }
-    </script>
+    <script type="text/javascript">
+        $('#enviar').click(function(){
+	        alert("Sua mensagem foi recebida com sucesso!");
+        })
+    </script>   
 </body>
 </html>

@@ -28,7 +28,7 @@
                     <a class="nav-link" href="#">Início <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Confirmar Presença</a>
+                    <a class="nav-link" href="https://wa.me/553299874948" target="_blank">Confirmar Presença</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="./pages/listaDePresente.php">Lista de Presente</a>
@@ -73,9 +73,9 @@
             <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ante sapien, tincidunt id pretium a, aliquam sit amet ante. Quisque vitae neque sapien. Duis dignissim placerat dolor nec porta. Quisque elementum consequat augue, sit amet tincidunt ligula vulputate sit amet. Fusce porta nisi diam, vitae pretium nibh volutpat quis. Nam sodales ex quis euismod dignissim. Donec porta eget lacus sit amet consectetur. Nullam vel leo egestas, volutpat neque ac, facilisis tellus. Aliquam dapibus sem condimentum vehicula eleifend.</p>    
         </div>
         <div class="row d-flex justify-content-center">
-            <img class="rounded col-4 pd-0" style="max-height: 270px; max-width:240px" src="./images/bruno.jpg"/>
-            <img class="rounded col-4 pd-0" style="max-height: 270px; max-width:240px" src="./images/marcella2.jpg"/>
-            <img class="rounded col-4 pd-0" style="max-height: 270px; max-width:240px" src="./images/marcella2.jpg"/>
+            <img class="rounded col-4 pd-0" style="max-height: 300px; max-width:270px" src="./images/bruno.jpg"/>
+            <img class="rounded col-4 pd-0" style="max-height: 300px; max-width:270px" src="./images/marcella2.jpg"/>
+            <img class="rounded col-4 pd-0" style="max-height: 300px; max-width:300px" src="./images/nos2.jpeg"/>
         </div>
         <div style="min-height: 100px"></div>
         <h3 class="text-center">Em breve fotos do casal.</h3>
