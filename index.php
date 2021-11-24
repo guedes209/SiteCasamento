@@ -72,10 +72,10 @@
             <h2 class="text-center">Um pouco sobre nós</h2>
             <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ante sapien, tincidunt id pretium a, aliquam sit amet ante. Quisque vitae neque sapien. Duis dignissim placerat dolor nec porta. Quisque elementum consequat augue, sit amet tincidunt ligula vulputate sit amet. Fusce porta nisi diam, vitae pretium nibh volutpat quis. Nam sodales ex quis euismod dignissim. Donec porta eget lacus sit amet consectetur. Nullam vel leo egestas, volutpat neque ac, facilisis tellus. Aliquam dapibus sem condimentum vehicula eleifend.</p>    
         </div>
-        <div class="d-flex justify-content-center">
-            <img class="rounded col-4 pd-0 m-1" style="max-height: 220px; max-width:220px; min-height: 220px; min-width:220px" src="./images/bruno.jpg"/>
-            <img class="rounded col-4 pd-0 m-1" style="max-height: 220px; max-width:220px; min-height: 220px; min-width:220px" src="./images/marcella2.jpg"/>
-            <img class="rounded col-4 pd-0 m-1" style="max-height: 220px; max-width:220px; min-height: 220px; min-width:220px" src="./images/nos2.jpeg"/>
+        <div class="ml-2 row d-flex justify-content-center" style="max-width:95%;">
+            <img class="rounded col-3 pd-0 m-1" style="max-height: 220px; max-width:220px; min-height: 220px; min-width:220px" src="./images/bruno.jpg"/>
+            <img class="rounded col-3 pd-0 m-1" style="max-height: 220px; max-width:220px; min-height: 220px; min-width:220px" src="./images/marcella2.jpg"/>
+            <img class="rounded col-3 pd-0 m-1" style="max-height: 220px; max-width:220px; min-height: 220px; min-width:220px" src="./images/nos2.jpeg"/>
         </div>
         <div style="min-height: 100px"></div>
         <h3 class="text-center">Em breve fotos do casal.</h3>
