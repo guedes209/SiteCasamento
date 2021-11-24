@@ -9,7 +9,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./dist/css/bootstrap.min.css"></link>
+    <link rel="stylesheet" href="./dist/css/bootstrap.css"></link>
     <link rel="stylesheet" href="./index.css"></link>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -28,7 +28,7 @@
                     <a class="nav-link" href="#">Início <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="https://wa.me/553299874948" target="_blank">Confirmar Presença</a>
+                   <a class="nav-link"  data-toggle="modal" data-target="#modalInfo">Confirmar Presença</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="./pages/listaDePresente.php">Lista de Presente</a>
@@ -48,23 +48,23 @@
         <h1 class="mt-5 pt-5 text-center text-dark font-weight-bold">Bem-Vindos ao Nosso Site!</h1>
         <h3 class="mt-5 pt-5 text-center text-dark font-weight-bold">Contagem regressiva</h3>
         <div class="d-flex justify-content-center">
-            <div id="countdown_dashboard">
+            <div class="m-5" id="countdown_dashboard">
                 <div class="dashp">
                     <span class="dashtitle text-dark">Dias</span>
                     <p id="days"></p>
                 </div>
-                <div class="dashp">
+                <div class="dashp ">
                     <span class="dashtitle text-dark">Horas</span>
                     <p id="hours"></p>
                 </div>
-                <div class="dashp">
+                <div class="dashp ">
                     <span class="dashtitle text-dark">Minutos</span>
                 <p id="minutes"></p>
-            </div>
-            <div class="dashp">
-                <span class="dashtitle text-dark">Segundos</span>
-                <p id="seconds"></p>
-            </div>
+                </div>
+                <div class="dashp ">
+                    <span class="dashtitle text-dark">Segundos</span>
+                    <p id="seconds"></p>
+                </div>
             </div>
         </div> 
         <div style="min-height: 100px"></div>
@@ -72,10 +72,10 @@
             <h2 class="text-center">Um pouco sobre nós</h2>
             <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ante sapien, tincidunt id pretium a, aliquam sit amet ante. Quisque vitae neque sapien. Duis dignissim placerat dolor nec porta. Quisque elementum consequat augue, sit amet tincidunt ligula vulputate sit amet. Fusce porta nisi diam, vitae pretium nibh volutpat quis. Nam sodales ex quis euismod dignissim. Donec porta eget lacus sit amet consectetur. Nullam vel leo egestas, volutpat neque ac, facilisis tellus. Aliquam dapibus sem condimentum vehicula eleifend.</p>    
         </div>
-        <div class="row d-flex justify-content-center">
-            <img class="rounded col-4 pd-0" style="max-height: 300px; max-width:270px" src="./images/bruno.jpg"/>
-            <img class="rounded col-4 pd-0" style="max-height: 300px; max-width:270px" src="./images/marcella2.jpg"/>
-            <img class="rounded col-4 pd-0" style="max-height: 300px; max-width:300px" src="./images/nos2.jpeg"/>
+        <div class="d-flex justify-content-center">
+            <img class="rounded col-4 pd-0 m-1" style="max-height: 220px; max-width:220px; min-height: 220px; min-width:220px" src="./images/bruno.jpg"/>
+            <img class="rounded col-4 pd-0 m-1" style="max-height: 220px; max-width:220px; min-height: 220px; min-width:220px" src="./images/marcella2.jpg"/>
+            <img class="rounded col-4 pd-0 m-1" style="max-height: 220px; max-width:220px; min-height: 220px; min-width:220px" src="./images/nos2.jpeg"/>
         </div>
         <div style="min-height: 100px"></div>
         <h3 class="text-center">Em breve fotos do casal.</h3>
@@ -84,11 +84,33 @@
             <h4 class="text-center">Local da cerimônia e recepção</h4>
         </div>
         <div class="d-flex justify-content-center mt-3 pt-3">
-            <div class="embed-responsive embed-responsive-21by9" style="width:60%!important;">
-                <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3715.734789067706!2d-42.675849485199976!3d-21.360953789907946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa2d72c8b606515%3A0x56f60a48f5e2408d!2sManto%20Verde!5e0!3m2!1spt-BR!2sbr!4v1636253648476!5m2!1spt-BR!2sbr" style="height: 95%!important;" allowfullscreen="" loading="lazy"></iframe>
+            <div class="embed-responsive embed-responsive-21by9" style="width:80%!important;">
+                <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3715.734789067706!2d-42.675849485199976!3d-21.360953789907946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa2d72c8b606515%3A0x56f60a48f5e2408d!2sManto%20Verde!5e0!3m2!1spt-BR!2sbr!4v1636253648476!5m2!1spt-BR!2sbr" style="height: 100%!important;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
     </div>
+    <div class="modal fade" id="modalInfo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Informações importantes</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    <input type="hidden" id="presenteID" name="presente" value=""></input>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <ul class="list-group-flush">
+                        <li class="list-group-item">No momento de confimar será necessário enviar junto o comprovante de vacinação</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                    <a href="https://wa.me/553299874948" target="_blank"><button type="submit" value="Confirmar" class="btn btn-primary">Confimar Presença</button></a>
+                </div>
+                </div>
+            </div>
+        </div> 
     <footer class="text-center text-white" style="background-color: #f1f1f1;">
         <!-- Grid container -->
         <div class="container pt-4">
