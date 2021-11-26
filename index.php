@@ -42,11 +42,12 @@
     </div>
     <div class="container-fluid bg-light"> 
         <div class="paisagem pt-5">
-            <h1 id="titulo" class="mt-5 pt-5 text-center text-dark" style="font-size: 70px; font-weight: light;">Marcella e Bruno</h1>
-            <h3 class="mb-4 py-4 text-center text-dark font-weight-bold"> 22/01/2022 </h3>
+        <div style="min-height: 100px"></div>
+            <h1 id="titulo" class="mt-5 pt-5 text-center text-dark display-4" style="font-weight: light;">Marcella e Bruno</h1>
+            <h3 class="mb-4 py-4 text-center text-dark"> 22/01/2022 </h3>
         </div>
-        <h1 class="mt-5 pt-5 text-center text-dark font-weight-bold">Bem-Vindos ao Nosso Site!</h1>
-        <h3 class="mt-5 pt-5 text-center text-dark font-weight-bold">Contagem regressiva</h3>
+        <h1 class="mt-5 pt-5 text-center text-dark">Bem-Vindos ao Nosso Site!</h1>
+        <h3 class="mt-5 pt-5 text-center text-dark">Contagem regressiva</h3>
         <div class="d-flex justify-content-center">
             <div class="m-5" id="countdown_dashboard">
                 <div class="dashp">
@@ -69,8 +70,8 @@
         </div> 
         <div style="min-height: 100px"></div>
         <div class="ml-5 mr-5 mt-5 p-5">
-            <h2 class="text-center">Um pouco sobre nós</h2>
-            <p style="font-size: 1.2rem;">Nós conhecemos em 2016 no grupo de gceu da igreja, logo no começo ele já se declarou mas eu não senti muito interesse não. Nossos melhores amigos, Juju e Natã começaram um plano para nos unir. Toda semana a gente se encontrava nos cultos e nos encontros de jovens, fomos nos conhecendo melhor, viramos amigos. Depois de 3 meses, alguns encontros, abraços pós culto, longas conversas no banco da praça, visitas inesperadas em JF, muita risada, eu conclui que ele era o garoto do meus sonhos, e finalmente no dia 26/02/2017 na praça santa Rita tivemos o primeiro beijo, e dia 12/03/2017 iniciamos o namoro. E se eu for detalhar tudo que aconteceu nesses 4 anos e 8 meses você não vai ficar aqui pra ler até o final, passamos por muitos momentos maravilhosos, eu vi ele passar no vestibular da faculdade, iniciar essa nova fase, eu estava na apresentação do artigo, do TCC, na colocação da grau, na entrevista de primeiro emprego, na carteira de motorista, ele me apoio desde quando não tinha certeza de qual faculdade iria fazer, apoiou quando eu mudei de faculdade, quando eu fiz a primeira entrevista de estágio, foi a primeira pessoa que eu liguei pra contar que tinha sido chamada. Nesse período também tivemos momentos difíceis, mudamos de cidade, ele em JF, eu em Cataguases, depois ele em Cataguases, eu em Limeira, durante quase toda  parte do nosso namoro, namoramos a distância, e isso foi um questão difícil para nós, mas nossa vontade de ficar junto e realizar nossos sonhos sempre, desde o início foi maior que qualquer dificuldade, um sempre estava lá quando o outro precisava. Por isso hoje agrademos nossos amigos por terem nos unido
+            <h2 id="sobrenos" class="text-center">Um pouco sobre nós</h2>
+            <p style="font-size: 1.5rem;">Nós conhecemos em 2016 no grupo de gceu da igreja, logo no começo ele já se declarou mas eu não senti muito interesse não. Nossos melhores amigos, Juju e Natã começaram um plano para nos unir. Toda semana a gente se encontrava nos cultos e nos encontros de jovens, fomos nos conhecendo melhor, viramos amigos. Depois de 3 meses, alguns encontros, abraços pós culto, longas conversas no banco da praça, visitas inesperadas em JF, muita risada, eu conclui que ele era o garoto do meus sonhos, e finalmente no dia 26/02/2017 na praça santa Rita tivemos o primeiro beijo, e dia 12/03/2017 iniciamos o namoro. E se eu for detalhar tudo que aconteceu nesses 4 anos e 8 meses você não vai ficar aqui pra ler até o final, passamos por muitos momentos maravilhosos, eu vi ele passar no vestibular da faculdade, iniciar essa nova fase, eu estava na apresentação do artigo, do TCC, na colocação da grau, na entrevista de primeiro emprego, na carteira de motorista, ele me apoio desde quando não tinha certeza de qual faculdade iria fazer, apoiou quando eu mudei de faculdade, quando eu fiz a primeira entrevista de estágio, foi a primeira pessoa que eu liguei pra contar que tinha sido chamada. Nesse período também tivemos momentos difíceis, mudamos de cidade, ele em JF, eu em Cataguases, depois ele em Cataguases, eu em Limeira, durante quase toda  parte do nosso namoro, namoramos a distância, e isso foi um questão difícil para nós, mas nossa vontade de ficar junto e realizar nossos sonhos sempre, desde o início foi maior que qualquer dificuldade, um sempre estava lá quando o outro precisava. Por isso hoje agrademos nossos amigos por terem nos unido
 </p>    
         </div>
         <div class="ml-2 row d-flex justify-content-center" style="max-width:95%;">
