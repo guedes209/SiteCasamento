@@ -26,17 +26,16 @@ h1, h3{
 }
 
 #countdown_dashboard .dashp { 
-    border:1px solid black; 
+    border:1px solid white; 
     float:left; 
     margin: 8px; 
     width:80px; 
     height: 80px; 
     padding:10px;  
-    border-radius: 15px; 
+    background-color: #fde1e5;
 }
 #countdown_dashboard p { 
     font-size:230%; 
-    font-weight:bold; 
     color:rgb(24, 24, 24); 
     margin: 0px; 
     text-align: left; 
@@ -61,3 +60,11 @@ nav{
     font-size:1.2em;
     font-style: normal!important;
 }
+@font-face {
+    font-family: myFirstFont;
+    src: url(./images/Christmas\ Combine\ Script.ttf);
+  }
+  
+  #titulo {
+    font-family: myFirstFont;
+  }

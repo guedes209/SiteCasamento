@@ -172,7 +172,8 @@
                 </div>
                 <div class="modal-body">
                     <ul class="list-group-flush">
-                        <li class="list-group-item">No momento de confimar será necessário enviar junto o comprovante de vacinação</li>
+                        <li class="list-group-item">É indispensável o comprovante de vacinação no momento de confirmação de presença</li>
+                        <li class="list-group-item">Caso não tenha em mãos, acesse o site <a href="https://conectesus.saude.gov.br/home">https://conectesus.saude.gov.br/home</a> ou baixe o app conecteSUS para acessar o comprovante de vacinação</li>
                     </ul>
                 </div>
                 <div class="modal-footer">

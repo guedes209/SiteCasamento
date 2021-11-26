@@ -42,7 +42,7 @@
     </div>
     <div class="container-fluid bg-light"> 
         <div class="paisagem pt-5">
-            <h1 class="mt-5 pt-5 text-center text-dark font-weight-bold" style="font-size: 70px">Marcella e Bruno</h1>
+            <h1 id="titulo" class="mt-5 pt-5 text-center text-dark" style="font-size: 70px; font-weight: light;">Marcella e Bruno</h1>
             <h3 class="mb-4 py-4 text-center text-dark font-weight-bold"> 22/01/2022 </h3>
         </div>
         <h1 class="mt-5 pt-5 text-center text-dark font-weight-bold">Bem-Vindos ao Nosso Site!</h1>
@@ -70,7 +70,8 @@
         <div style="min-height: 100px"></div>
         <div class="ml-5 mr-5 mt-5 p-5">
             <h2 class="text-center">Um pouco sobre nós</h2>
-            <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ante sapien, tincidunt id pretium a, aliquam sit amet ante. Quisque vitae neque sapien. Duis dignissim placerat dolor nec porta. Quisque elementum consequat augue, sit amet tincidunt ligula vulputate sit amet. Fusce porta nisi diam, vitae pretium nibh volutpat quis. Nam sodales ex quis euismod dignissim. Donec porta eget lacus sit amet consectetur. Nullam vel leo egestas, volutpat neque ac, facilisis tellus. Aliquam dapibus sem condimentum vehicula eleifend.</p>    
+            <p style="font-size: 1.2rem;">Nós conhecemos em 2016 no grupo de gceu da igreja, logo no começo ele já se declarou mas eu não senti muito interesse não. Nossos melhores amigos, Juju e Natã começaram um plano para nos unir. Toda semana a gente se encontrava nos cultos e nos encontros de jovens, fomos nos conhecendo melhor, viramos amigos. Depois de 3 meses, alguns encontros, abraços pós culto, longas conversas no banco da praça, visitas inesperadas em JF, muita risada, eu conclui que ele era o garoto do meus sonhos, e finalmente no dia 26/02/2017 na praça santa Rita tivemos o primeiro beijo, e dia 12/03/2017 iniciamos o namoro. E se eu for detalhar tudo que aconteceu nesses 4 anos e 8 meses você não vai ficar aqui pra ler até o final, passamos por muitos momentos maravilhosos, eu vi ele passar no vestibular da faculdade, iniciar essa nova fase, eu estava na apresentação do artigo, do TCC, na colocação da grau, na entrevista de primeiro emprego, na carteira de motorista, ele me apoio desde quando não tinha certeza de qual faculdade iria fazer, apoiou quando eu mudei de faculdade, quando eu fiz a primeira entrevista de estágio, foi a primeira pessoa que eu liguei pra contar que tinha sido chamada. Nesse período também tivemos momentos difíceis, mudamos de cidade, ele em JF, eu em Cataguases, depois ele em Cataguases, eu em Limeira, durante quase toda  parte do nosso namoro, namoramos a distância, e isso foi um questão difícil para nós, mas nossa vontade de ficar junto e realizar nossos sonhos sempre, desde o início foi maior que qualquer dificuldade, um sempre estava lá quando o outro precisava. Por isso hoje agrademos nossos amigos por terem nos unido
+</p>    
         </div>
         <div class="ml-2 row d-flex justify-content-center" style="max-width:95%;">
             <img class="rounded col-3 pd-0 m-1" style="max-height: 220px; max-width:220px; min-height: 220px; min-width:220px" src="./images/bruno.jpg"/>
@@ -101,7 +102,8 @@
                 </div>
                 <div class="modal-body">
                     <ul class="list-group-flush">
-                        <li class="list-group-item">No momento de confimar será necessário enviar junto o comprovante de vacinação</li>
+                        <li class="list-group-item">É indispensável o comprovante de vacinação no momento de confirmação de presença</li>
+                        <li class="list-group-item">Caso não tenha em mãos, acesse o site <a href="https://conectesus.saude.gov.br/home">https://conectesus.saude.gov.br/home</a> ou baixe o app conecteSUS para acessar o comprovante de vacinação</li>
                     </ul>
                 </div>
                 <div class="modal-footer">
