@@ -71,16 +71,23 @@
         <div style="min-height: 100px"></div>
         <div class="ml-5 mr-5 mt-5 p-5">
             <h2 id="sobrenos" class="text-center">Um pouco sobre nós</h2>
-            <p style="font-size: 1.5rem;">Nós conhecemos em 2016 no grupo de gceu da igreja, logo no começo ele já se declarou mas eu não senti muito interesse não. Nossos melhores amigos, Juju e Natã começaram um plano para nos unir. Toda semana a gente se encontrava nos cultos e nos encontros de jovens, fomos nos conhecendo melhor, viramos amigos. Depois de 3 meses, alguns encontros, abraços pós culto, longas conversas no banco da praça, visitas inesperadas em JF, muita risada, eu conclui que ele era o garoto do meus sonhos, e finalmente no dia 26/02/2017 na praça santa Rita tivemos o primeiro beijo, e dia 12/03/2017 iniciamos o namoro. E se eu for detalhar tudo que aconteceu nesses 4 anos e 8 meses você não vai ficar aqui pra ler até o final, passamos por muitos momentos maravilhosos, eu vi ele passar no vestibular da faculdade, iniciar essa nova fase, eu estava na apresentação do artigo, do TCC, na colocação da grau, na entrevista de primeiro emprego, na carteira de motorista, ele me apoio desde quando não tinha certeza de qual faculdade iria fazer, apoiou quando eu mudei de faculdade, quando eu fiz a primeira entrevista de estágio, foi a primeira pessoa que eu liguei pra contar que tinha sido chamada. Nesse período também tivemos momentos difíceis, mudamos de cidade, ele em JF, eu em Cataguases, depois ele em Cataguases, eu em Limeira, durante quase toda  parte do nosso namoro, namoramos a distância, e isso foi um questão difícil para nós, mas nossa vontade de ficar junto e realizar nossos sonhos sempre, desde o início foi maior que qualquer dificuldade, um sempre estava lá quando o outro precisava. Por isso hoje agrademos nossos amigos por terem nos unido
-</p>    
+            <p class="text-justify" style="font-size: 1.5rem;">Nós conhecemos em 2016 no grupo de gceu da igreja, logo no começo ele já se declarou mas eu não senti muito interesse não. Nossos melhores amigos, Juju e Natã começaram um plano para nos unir. Toda semana a gente se encontrava nos cultos e nos encontros de jovens, fomos nos conhecendo melhor, viramos amigos. Depois de 3 meses, alguns encontros, abraços pós culto, longas conversas no banco da praça, visitas inesperadas em JF, muita risada, eu conclui que ele era o garoto do meus sonhos, e finalmente no dia 26/02/2017 na praça santa Rita tivemos o primeiro beijo, e dia 12/03/2017 iniciamos o namoro. E se eu for detalhar tudo que aconteceu nesses 4 anos e 8 meses você não vai ficar aqui pra ler até o final, passamos por muitos momentos maravilhosos, eu vi ele passar no vestibular da faculdade, iniciar essa nova fase, eu estava na apresentação do artigo, do TCC, na colocação da grau, na entrevista de primeiro emprego, na carteira de motorista, ele me apoio desde quando não tinha certeza de qual faculdade iria fazer, apoiou quando eu mudei de faculdade, quando eu fiz a primeira entrevista de estágio, foi a primeira pessoa que eu liguei pra contar que tinha sido chamada. Nesse período também tivemos momentos difíceis, mudamos de cidade, ele em JF, eu em Cataguases, depois ele em Cataguases, eu em Limeira, durante quase toda  parte do nosso namoro, namoramos a distância, e isso foi um questão difícil para nós, mas nossa vontade de ficar junto e realizar nossos sonhos sempre, desde o início foi maior que qualquer dificuldade, um sempre estava lá quando o outro precisava. Por isso hoje agrademos nossos amigos por terem nos unido
+        </p>    
         </div>
         <div class="ml-2 row d-flex justify-content-center" style="max-width:95%;">
             <img class="rounded col-3 pd-0 m-1" style="max-height: 220px; max-width:220px; min-height: 220px; min-width:220px" src="./images/bruno.jpg"/>
             <img class="rounded col-3 pd-0 m-1" style="max-height: 220px; max-width:220px; min-height: 220px; min-width:220px" src="./images/marcella2.jpg"/>
-            <img class="rounded col-3 pd-0 m-1" style="max-height: 220px; max-width:220px; min-height: 220px; min-width:220px" src="./images/nos2.jpeg"/>
         </div>
         <div style="min-height: 100px"></div>
-        <h3 class="text-center">Em breve fotos do casal.</h3>
+        <div class="ml-2 row d-flex justify-content-center" style="max-width:95%;">
+            <?php 
+                for($i = 1; $i <= 20; $i++){
+                    $img = "./images/ensaio/".$i.".jpeg";
+                ?>
+                    <img class="img-responsive col-7 pl-4 ml-2" src=<?= $img?>>
+
+                <?php } ?>
+        </div>
         <div style="min-height: 100px"></div>
         <div class="text-center font-italic mt-5 pt-5">
             <h4 class="text-center">Local da cerimônia e recepção</h4>
@@ -90,6 +97,7 @@
                 <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3715.734789067706!2d-42.675849485199976!3d-21.360953789907946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa2d72c8b606515%3A0x56f60a48f5e2408d!2sManto%20Verde!5e0!3m2!1spt-BR!2sbr!4v1636253648476!5m2!1spt-BR!2sbr" style="height: 100%!important;" allowfullscreen="" loading="lazy"></iframe>
             </div>
         </div>
+        
     </div>
     <div class="modal fade" id="modalInfo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
@@ -114,7 +122,7 @@
                 </div>
             </div>
         </div> 
-    <footer class="text-center text-white" style="background-color: #f1f1f1;">
+        <footer class="text-center text-white" style="background-color: #f1f1f1;">
         <!-- Grid container -->
         <div class="container pt-4">
             <!-- Section: Social media -->
