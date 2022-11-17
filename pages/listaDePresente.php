@@ -44,7 +44,7 @@
         </nav>
     </div>
     <div class="container" style="margin-top: 70px;">
-        <!-- <h1 class="text-center">Pix</h1>
+        <h1 class="text-center">Pix</h1>
         <div class="display-flex list-group-horizontal">
             <ul class="list-group list-group-horizontal">
                 <div class="row">
@@ -57,14 +57,14 @@
                                     <button class="btn btn-primary dropdown-toggle" id="dropdownMenuButton1" data-toggle="dropdown" type="button" aria-expanded="false">Enviar
                                     </button>
                                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                        <a class="dropdown-item" onclick="window.open('https://nubank.com.br/pagar/9hsaw/o4RbGfY3d0');">Bruno</a>
-                                        <a class="dropdown-item" onclick="window.open('https://nubank.com.br/pagar/1kzh07/u6mXlFN0up');">Marcella</a>
+                                        <a class="dropdown-item" onclick="window.open('https://nubank.com.br/pagar/wso9s/6QFMxPBlzi');">Júlia</a>
+                                        <!-- <a class="dropdown-item" onclick="window.open('https://nubank.com.br/pagar/1kzh07/u6mXlFN0up');">Marcella</a> -->
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </li>
-                    <li class=" bg-light list-group-item col-lg-4 col-md-6 col-sm-12 col-12 list-group-item" style="border: 7px white solid;">
+                    <!-- <li class=" bg-light list-group-item col-lg-4 col-md-6 col-sm-12 col-12 list-group-item" style="border: 7px white solid;">
                         <div>
                             <img style="max-height: 270px; max-width:270px" src="../images/pix.png" class="rounded mx-auto d-block">
                             <div class="d-flex justify-content-between align-items-center">
@@ -79,7 +79,7 @@
                                 </div>
                             </div>
                         </div>
-                    </li>
+                    </li> -->
                     <li class="bg-light list-group-item col-lg-4 col-md-6 col-sm-12 col-12 list-group-item" style="border: 7px white solid;">
                         <div>
                             <img style="max-height: 270px; max-width:270px" src="../images/pix.png" class="rounded mx-auto d-block">
@@ -89,8 +89,8 @@
                                     <button class="btn btn-primary dropdown-toggle" id="dropdownMenuButton1" data-toggle="dropdown" type="button" aria-expanded="false">Enviar
                                     </button>
                                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                        <a class="dropdown-item" onclick="window.open('https://nubank.com.br/pagar/9hsaw/o4RbGfY3d0');">Bruno</a>
-                                        <a class="dropdown-item" onclick="window.open('https://nubank.com.br/pagar/1kzh07/u6mXlFN0up');">Marcella</a>
+                                        <a class="dropdown-item" onclick="window.open('https://nubank.com.br/pagar/wso9s/NeTfbnqiCr');">Júlia</a>
+                                        <!-- <a class="dropdown-item" onclick="window.open('https://nubank.com.br/pagar/1kzh07/u6mXlFN0up');">Marcella</a> -->
                                     </div>
                                 </div>
                             </div>
@@ -98,14 +98,13 @@
                     </li>
                 </div>
             </ul>
-        </div> -->
+        </div>
         <hr>
         <h1 class="text-center mb-3">Presentes</h1>
         <div class="bg-light pt-2 mb-5">
             <h5 class="text-center">Informações importantes</h5>
             <div class="row">
-                <p class="ml-4 col-7" style="font-bold: none;">Endereço: Rua Custódio Tristão, 300 Apartamento 1302 Torre 03. <br>Bairro: Santa Terezinha /CEP: 36045-440</p><br>
-                <p class="ml-4 col-4">Caso escolha fogão, <br>entrar em contato com os noivos.</p>
+                <p class="ml-4 col-10" style="font-bold: none;">Endereço: Rua Custódio Tristão, 300 Apartamento 1302 Torre 03. <br>Bairro: Santa Terezinha /CEP: 36045-440</p><br>
             </div>
         </div>
         <div class="display-flex">
