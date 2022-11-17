@@ -1,12 +1,3 @@
-<?php
-    include("../database/conexao.php");
-    $conexao = new Conexao();
-    $pdo = $conexao->conectar();
-    $sql = "SELECT presenteID, presenteNome, FORMAT(valor, 2,'de_DE') as valor, link, caminhoimg, comprado FROM presente ORDER BY presenteNome";
-    $stmt = $pdo->prepare($sql);
-    $stmt->execute();
-    $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,7 +22,7 @@
                     <a class="nav-link" href="../index.php">Início <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" data-toggle="modal" data-target="#modalInfo">Confirmar Presença</a>
+                <a class="nav-link" href="https://wa.me/553299854740" target="blank">Confirmar Presença</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="listaDePresente.php">Lista de Presente</a>
@@ -67,29 +58,6 @@
             </form>
         </div>
     </div>
-    <div class="modal fade" id="modalInfo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-                <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Informações importantes</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                    <input type="hidden" id="presenteID" name="presente" value=""></input>
-                    </button>
-                </div>
-                <div class="modal-body">
-                    <ul class="list-group-flush">
-                        <li class="list-group-item">É indispensável o comprovante de vacinação no momento de confirmação de presença</li>
-                        <li class="list-group-item">Caso não tenha em mãos, acesse o site <a href="https://conectesus.saude.gov.br/home">https://conectesus.saude.gov.br/home</a> ou baixe o app conecteSUS para acessar o comprovante de vacinação</li>
-                    </ul>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                    <a href="https://wa.me/553299874948" target="_blank"><button type="submit" value="Confirmar" class="btn btn-primary">Confimar Presença</button></a>
-                </div>
-                </div>
-            </div>
-        </div>
     <div style="min-height: 98px"></div>
     <footer class="text-center text-white mt-5" style="background-color: #f1f1f1;">
         <!-- Grid container -->
