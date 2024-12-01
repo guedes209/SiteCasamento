@@ -1,12 +1,3 @@
-<?php
-    include("../database/conexao.php");
-    $conexao = new Conexao();
-    $pdo = $conexao->conectar();
-    $sql = "SELECT presenteID, presenteNome, FORMAT(valor, 2,'de_DE') as valor, link, caminhoimg, comprado FROM presente ORDER BY presenteNome";
-    $stmt = $pdo->prepare($sql);
-    $stmt->execute();
-    $rows = $stmt->fetchAll(PDO::FETCH_ASSOC);
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -104,33 +95,26 @@
         <div class="bg-light pt-2 mb-5">
             <h5 class="text-center">Informações importantes</h5>
             <div class="row">
-                <p class="ml-4 col-10" style="font-bold: none;">Endereço: Rua Custódio Tristão, 300 Apartamento 1302 Torre 03. <br>Bairro: Santa Terezinha /CEP: 36045-440</p><br>
+                <p class="ml-4 col-10">Endereço: Rua Custódio Tristão, 300 Apartamento 1302 Torre 03. <br>Bairro: Santa Terezinha /CEP: 36045-440</p><br>
             </div>
         </div>
         <div class="display-flex">
             <ul class="list-group list-group-horizontal">	
                 <div class="row">
-                <?php
-                    foreach($rows as $value){
-                        $enable = $value['comprado'] == 'S' ? 'disabled' : '';
-                        $cor = $value['comprado'] == 'S' ? 'btn-secondary' : 'btn-primary';
-                        $texto = $value['comprado'] == 'S' ? 'Comprado' : 'Comprar';
-                        ?>
-                        <li id="<?= $value['presenteID']?>" class="bg-light list-group-item col-lg-4 col-md-6 col-sm-12 col-12" style="border: white solid; border-width:10px;">
-                            <img src=<?= $value['caminhoimg']?> class="rounded mx-auto d-block" style="max-height: 270px; max-width:270px">
+                        <li id="" class="bg-light list-group-item col-lg-4 col-md-6 col-sm-12 col-12" style="border: white solid; border-width:10px;">
+                            <img src="" class="rounded mx-auto d-block" style="max-height: 270px; max-width:270px">
                             <div class="h5" style="margin-top:5px;">
-                                <?= $value['presenteNome'] ?>
+                               
                             </div>
                             <div class="d-flex justify-content-between align-items-center">
-                                <span class="float-left">Valor: R$<?= $value['valor'] ?></span>
-                                <a onclick="window.open('<?= $value['link']?>');" target="_self">
-                                    <button <?= $enable ?> onclick="atribuir(<?= $value['presenteID']?>)" class="btn <?= $cor ?>" data-toggle="modal" data-target="#exampleModal">
-                                    <?= $texto ?>
+                                <span class="float-left">Valor: R$</span>
+                                <a onclick="window.open('');" target="_self">
+                                    <button  onclick="atribuir()" class="btn <?= $cor ?>" data-toggle="modal" data-target="#exampleModal">
+                                    
                                     </button>
                                 </a>
                             </div>
                         </li>
-                    <?php } ?>
                 </div>
             </ul>
         </div>
